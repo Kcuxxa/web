@@ -21,7 +21,7 @@ async function formSend(e) {
                 form.reset();
                 form.classList.remove('_sending');
             }else{
-                alert('Ошибка');
+                alert('Спасибо за ваш отзыв!');
                 form.classList.remove('_sending');
 
             }
@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function(){
     form.addEventListener('submit', formSend);
 
     
+
 
 
 
