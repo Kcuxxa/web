@@ -69,8 +69,6 @@ async function formSend(e) {
     }
 
 document.addEventListener('DOMContentLoaded', function(){
-    alert('sdf')
-        
     const form = document.getElementById('form');
     form.addEventListener('submit', formSend);
 
@@ -80,3 +78,4 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 })
+
