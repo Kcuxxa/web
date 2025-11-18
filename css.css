@@ -1,18 +1,18 @@
 
         body {
-            background:linear-gradient( #f895dd 0%, #ebb4f4 50%);
-            color: rgb(245, 240, 244);
+            background:linear-gradient( #f6d9ee 0%, #f6def9 50%);
+            color: rgb(2, 2, 2);
             line-height: 2;
         }
 
         .container {
             max-width:1300px;
             margin: 0 auto;
-            background: rgb(241, 138, 226);
+            background: rgb(252, 212, 246);
             backdrop-filter: blur(50px);
             border-radius: 20px;
             padding: 40px;
-            box-shadow: 0 8px 32px rgba(241, 130, 236, 0.868);
+            box-shadow: 0 8px 32px rgba(255, 238, 254, 0.868);
         }
 
         .header {
@@ -41,7 +41,7 @@
         }
 
         h2 {
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid rgb(255, 255, 255);
             padding-bottom: 10px;
             margin-bottom: 15px;
             font-size:larger;
@@ -54,7 +54,7 @@
         }
 
         .skill {
-            background: rgba(235, 169, 211, 0.816);
+            background: rgba(255, 149, 216, 0.816);
             padding: 8px 15px;
             border-radius: 20px;
             font-size: 0.9em;
@@ -76,7 +76,7 @@
         }
 
         a {
-            color: #4f0112;
+            color: #560013;
             text-decoration: none;
         }
 
@@ -84,3 +84,130 @@
             color: #f7f2f6;
             text-decoration: underline;
         }
+        .foorm{
+            max-width:  500px;
+            margin: 0 auto;
+            background: rgb(253, 167, 240);
+            backdrop-filter: blur(50px);
+            border-radius: 20px;
+            padding: 40px;
+            
+        }
+        .form{
+            max-width:  300px;
+            margin: auto;
+            color: #ffffff;
+            padding: 20px 0;
+            
+        }
+        .form *{
+            outline:none ;
+        }
+        .form_body{
+            position: relative;
+        }
+        .form_body::after{
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            visibility: hidden;
+            opacity: 0;
+        }
+        .form_body._sending::after{
+            opacity: 1;
+            visibility: visible;
+        }
+        .form_item{
+            margin: 0px 0px 12px 0px ;
+        }
+        .form_label{
+            font-size: 15px;
+            display: block;
+            margin: 0px 0px 10px 0px;
+        }
+        .form_input{
+            height: 30px;
+            padding: 10px;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 18px;
+        }
+        .form_input:focus{
+            box-shadow: 0 0 15px #d7a7ca;
+        }
+        .form_input._error{
+            box-shadow: 0 0 15px #ff0000;
+        }
+        textarea.form_input{
+            min-height: 100px;
+            resize: vertical;
+            padding: 10px;
+        }
+        .select{
+            height: 30px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 18px;
+            padding: 0px 10px;
+        }
+        .checkbox{
+
+        }
+        .checkbox._error .checkbox_label::before{
+            box-shadow: 0 0 15px #ff0000;
+        }
+        .checkbox_input{
+            display: none;
+
+        }
+        .checkbox_input:checked + .checkbox_label::after{
+            transform: scale(1);
+        }
+        .checkbox_label{
+            font-size: 16px;
+            line-height: 140%;
+            display: inline-flex;
+            align-items: center;
+            position: relative;
+            cursor: pointer;
+
+        }
+        .checkbox_label::before{
+            content: "";
+            align-self: flex-start;
+            flex: 0 0 24px;
+            height: 24px;
+            background-color: #ffffff;
+            border-radius: 4px;
+            margin: 0 10px 0 0;
+        }
+        .checkbox_label::after{
+            transition: transform 0.5s ease 0s;
+            content: "";
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            background-color: #fb00ee;
+            border-radius: 4px;
+            transform: scale(0);
+        }
+        .form_button{
+             width: 100%;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             min-height: 40px;
+             background-color: #eac5e0;
+             color: #ffffff;
+             font-weight: 700;
+             font-size: 18px;
+             cursor: pointer;
+             border-radius: 20px;
+             box-shadow: 0 5px 0 #905981;
+        }
+
