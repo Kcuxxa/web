@@ -4,6 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Мой первый сайт</title>
    <link rel="stylesheet" href="css.css">
+<script src="script.js"></script>
 </head>
 <body>
     <div class="container">
@@ -47,8 +48,54 @@
             Курс:1 <br>
             </p>
         </section>
-
-        <section class="section">
+    <div class="foorm" >  
+    <div class="form">
+    <form action="" id="form" class="form_body">
+        <h2>Поделитесь своим мнением о сайте!</h2>
+        <div class="form_item">
+        <label for="username" class="form_label">Ваше имя*: </label>
+            <input type="text" id="username" class="form_input _req ">
+        </div>
+        <div class="form_item">
+        <label for="email" class="form_label">E-mail*:</label>
+            <input type="email" name="email" class="form_input _req _email">
+        </div>
+        <div class="form_item">
+            <label for="zodiac-sign" class="form_label">Знак зодиака:</label>
+            <select id="zodiac-sign" name="zodiac-sign" class="select">
+                <option value="" selected>--Выберите знак зодиака--</option>
+                <option value="aries" >♈ Овен (21 марта - 19 апреля)</option>
+                <option value="taurus">♉ Телец (20 апреля - 20 мая)</option>
+                <option value="gemini">♊ Близнецы (21 мая - 20 июня)</option>
+                <option value="cancer">♋ Рак (21 июня - 22 июля)</option>
+                <option value="leo">♌ Лев (23 июля - 22 августа)</option>
+                <option value="virgo">♍ Дева (23 августа - 22 сентября)</option>
+                <option value="libra">♎ Весы (23 сентября - 22 октября)</option>
+                <option value="scorpio">♏ Скорпион (23 октября - 21 ноября)</option>
+                <option value="sagittarius">♐ Стрелец (22 ноября - 21 декабря)</option>
+                <option value="capricorn">♑ Козерог (22 декабря - 19 января)</option>
+                <option value="aquarius">♒ Водолей (20 января - 18 февраля)</option>
+                <option value="pisces">♓ Рыбы (19 февраля - 20 марта)</option>
+            </select>
+        </div>
+        <div class="form_item">
+        <label for="comment" class="form_label">Отзыв o сайте*:</label>
+            <textarea name="comment" id="comment" class="form_input _req"></textarea>
+        </div>
+        <div class="form_item">
+            <div class="checkbox">
+            <input type="checkbox" id="foragreement" class="checkbox_input _req">
+            <label for="foragreement" class="checkbox_label"><span>Я даю свое согласие на обработку персональных данных</span></label>
+            </div>
+        </div>
+        <div class="form_item">
+            <button type=submit class="form_button">Отправить</button>
+        </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    <section class="section">
             <h2>Контакты</h2>
             <ul class="contact-list">
                 <li>Email: <a href="mkd2020@bk.ru">mkd2020@bk.ru</a></li>
@@ -59,6 +106,5 @@
             </h6>
             </ul>
         </section>
-    </div>
 </body>
 </html>
