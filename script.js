@@ -9,6 +9,7 @@ async function formSend(e) {
         
 
         if (error === 0){
+            /*
             form.classList.add('_sending');
             let response = await fetch('sendmail.php',{
                 method: 'POST',
@@ -21,10 +22,14 @@ async function formSend(e) {
                 form.reset();
                 form.classList.remove('_sending');
             }else{
-                alert('Спасибо за ваш отзыв!');
+                */
+
+                const text = document.getElementById('formtext');
+                text.style.display = "block";
+                const name = document.getElementById('username');
+                text.innerHTML = "Спасибо, " + name.value + "за отзыв!";
                 form.classList.remove('_sending');
 
-            }
         }else{
             alert('Заполните обязательные поля');
         }
@@ -67,8 +72,11 @@ async function formSend(e) {
     function emailTest(input){
         return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(input.value);
     }
+    
 
 document.addEventListener('DOMContentLoaded', function(){
+    
+   
     const form = document.getElementById('form');
     form.addEventListener('submit', formSend);
 
@@ -76,6 +84,4 @@ document.addEventListener('DOMContentLoaded', function(){
 
 
 
-
 })
-
